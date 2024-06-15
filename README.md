@@ -19,7 +19,7 @@ The Marmara region faces a significant earthquake threat. Numerous studies (Atak
 
 The Marmara region, located between latitudes 39.52-42.00 and longitudes 26.30-31.40, has been chosen as the study area. Earthquakes that occurred within this region between June 1, 1990 and May 31, 2024 have been collected from the AFAD earthquake catalog website.
 
-![Figure 1](figures/Figure1_MarkovChain.png)
+![Figure 1](Figures/Figure1_MarkovChain.png)
 
 **Figure 1:** Earthquakes between May 31, 1990 and June 1, 2024 in the Marmara region
 
