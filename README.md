@@ -39,7 +39,9 @@ In this study, Discrete-Time Markov Chains (DTMCs) are employed to forecast the 
 
 Maximum magnitudes for each month are grouped in this study into intervals such as magnitude between 3 and 4, magnitude between 4 and 5, magnitude between 5 and 6, and greater than 6. The Markov chain process defines these groups as states.
 
-<img src="Figures/Figure3_MarkovChain.png" alt="Figure 3" width="600"/>
+<div align="center">
+  <img src="Figures/Figure3_MarkovChain.png" alt="Figure 3" width="600"/>
+</div>
 
 **Figure 3:** Maximum grouped magnitude of earthquakes for each month between May 1990 and June 2024
 
@@ -55,13 +57,13 @@ Using a month as the time unit, the sequential transition of earthquakes was tak
 | >6     | 0        | 0.5      | 0.5      | 0        |
 
 
-<img src="Figures/Figure4_MarkovChain.png" alt="Figure 4" width="600"/>
+<img src="Figures/Figure4_MarkovChain.png" alt="Figure 4" width="400"/>
 
 **Figure 4:** One-step transition diagram of magnitude group for the region
 
 This indicates an equilibrium distribution suggesting a process that adheres to an irreducible Markov chain.
 
-| \pi | 0.664    | 0.291      | 0.039     | 0.006       |
+π =[0.664, 0.291, 0.039, 0.006]
 
 Since there is an irreducible Markov chain for calculating the recurrence periods of earthquakes in clusters, the earthquake recurrence times of the clusters or mean passage time (in months) are obtained using the equilibrium distribution.
 
