@@ -25,6 +25,8 @@ The Marmara region, located between latitudes 39.52-42.00 and longitudes 26.30-3
 
 Following the methodology of the reference article by Ünal et al. (2023), Markov chain and cluster analysis were conducted using the maximum earthquake magnitudes recorded each month. 
 
+<img src="Figures/Figure2_MarkovChain.png" alt="Figure 2" width="600"/>
+
 **Figure 2:** Maximum magnitude of earthquakes for each month between May 1990 and June 2024
 
 ## Method
@@ -33,36 +35,11 @@ The Markov Chain method is used to estimate the average transit time of earthqua
 
 In this study, Discrete-Time Markov Chains (DTMCs) are employed to forecast the progression of earthquake sequences within our study area. A DTMC is a type of Markov chain where the probability distribution of the state at time t+1 is contingent upon the state at time t, with no dependence on prior states. 
 
-The Markov property is expressed as:
-\[ P(X_{t+1} = j | X_t = i) = P(X_{t+1} = j | X_t = i) \]
-
-Here \( p_{ij} \) denotes the probability that given the system is in state i at time t, it will transition to state j at time t+1. The transition probabilities are compiled into a transition probability matrix P that encompasses the number of states s. The transition probability matrix P is shown as:
-
-\[ P = \begin{bmatrix}
-p_{11} & \cdots & p_{1s} \\
-\vdots & \ddots & \vdots \\
-p_{s1} & \cdots & p_{ss}
-\end{bmatrix} \]
-
-The long-term behavior of a Markov chain is characterized by its steady-state probabilities. The initial probabilities form the initial probability vector.
-
-According to the theorem for an s-state ergodic chain, if P is the transition matrix then there exists a vector π.
-
-\[ \pi = \pi P \quad \text{and} \quad \sum_{i=1}^{s} \pi_i = 1 \]
-
-For large n, the n-step transition matrix \( P^n \) approaches a matrix with identical rows. According to the theorem, this holds for any initial state i.
-
-\[ \lim_{n \to \infty} P^n = \begin{bmatrix}
-\pi_1 & \cdots & \pi_s \\
-\vdots & \ddots & \vdots \\
-\pi_1 & \cdots & \pi_s
-\end{bmatrix} \]
-
-This means that in a Markov chain, after a long enough time, the system reaches a steady state where the probability of being in any particular state j (denoted as \( \pi_j \)) is independent of the initial state i.
-
 ## Results
 
 Maximum magnitudes for each month are grouped in this study into intervals such as magnitude between 3 and 4, magnitude between 4 and 5, magnitude between 5 and 6, and greater than 6. The Markov chain process defines these groups as states.
+
+<img src="Figures/Figure3_MarkovChain.png" alt="Figure 3" width="600"/>
 
 **Figure 3:** Maximum grouped magnitude of earthquakes for each month between May 1990 and June 2024
 
@@ -77,11 +54,14 @@ Using a month as the time unit, the sequential transition of earthquakes was tak
 | 5-6    | 0.428571 | 0.571429 | 0        | 0        |
 | >6     | 0        | 0.5      | 0.5      | 0        |
 
+
+<img src="Figures/Figure4_MarkovChain.png" alt="Figure 4" width="600"/>
+
 **Figure 4:** One-step transition diagram of magnitude group for the region
 
-The results show that the row probabilities of the transition matrices for earthquake transitions between clusters in the Marmara Region are fixed values that depend on time. This indicates an equilibrium distribution suggesting a process that adheres to an irreducible Markov chain.
+This indicates an equilibrium distribution suggesting a process that adheres to an irreducible Markov chain.
 
-\[ \pi = [0.664, 0.291, 0.039, 0.006] \]
+| \pi | 0.664    | 0.291      | 0.039     | 0.006       |
 
 Since there is an irreducible Markov chain for calculating the recurrence periods of earthquakes in clusters, the earthquake recurrence times of the clusters or mean passage time (in months) are obtained using the equilibrium distribution.
 
@@ -91,11 +71,7 @@ Since there is an irreducible Markov chain for calculating the recurrence period
 |--------|-------|-------|-------|-------|
 | Mean passage time | 1.51  | 3.44  | 25.37 | 117.46|
 
-In the Marmara Region of Turkey, it is estimated that earthquakes with magnitudes between 3 and 4 will occur approximately every one and a half months. For earthquakes in the range of magnitude 4 to 5, the expected recurrence time is around three and a half months. Additionally, earthquakes in the magnitude range of 5 to 6 are expected to occur approximately every 25 months, while earthquakes with magnitudes greater than 6 are expected every 117 months.
-
 ## Conclusion
-
-The North Anatolian Fault Zone, which has already seen several devastating earthquakes, mostly affects the Marmara region. It is essential to comprehend the patterns of earthquakes in this area in order to mitigate hazards. Future earthquakes can be predicted by utilizing stochastic methods for analyzing previous ones. Forecasting seismic activity in the future facilitates the preparation of emergency plans and the application of efficient risk mitigation techniques. In the end, this makes communities in earthquake-prone areas more resilient and safe.
 
 In this study, it is estimated that the mean recurrence time of future earthquakes by analyzing historical earthquakes using the Markov chain stochastic process method. It is predicted that earthquakes in the Marmara Region of Turkey will happen about every 1.5 months with magnitudes ranging from 3 to 4. The estimated recurrence period for earthquakes with a magnitude of 4 to 5 is approximately three and a half months. Furthermore, an earthquake with a magnitude between 5 and 6 is predicted to happen roughly every 25 months, while an earthquake with a magnitude greater than 6 is predicted to happen every 117 months.
 
