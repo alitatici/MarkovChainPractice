@@ -3,7 +3,6 @@ In this repository, I publish my study on earthquake forecasting using the Discr
 
 
 # Earthquake Forecasting Using Discrete-Time Markov Chains (DTMC)
-This study was conducted as a term project for the CE 505 Applied Stochastic Analysis and Modeling course at Boğaziçi University during the Spring 2023-2024 semester.
 
 ## Introduction
 
@@ -19,13 +18,17 @@ The Marmara region faces a significant earthquake threat. Numerous studies (Atak
 
 The Marmara region, located between latitudes 39.52-42.00 and longitudes 26.30-31.40, has been chosen as the study area. Earthquakes that occurred within this region between June 1, 1990 and May 31, 2024 have been collected from the AFAD earthquake catalog website.
 
-<img src="Figures/Figure1_MarkovChain.png" alt="Figure 1" width="600"/>
+<div align="center">
+  <img src="Figures/Figure1_MarkovChain.png" alt="Figure 1" width="600"/>
+</div>
 
 **Figure 1:** Earthquakes between May 31, 1990 and June 1, 2024 in the Marmara region
 
 Following the methodology of the reference article by Ünal et al. (2023), Markov chain and cluster analysis were conducted using the maximum earthquake magnitudes recorded each month. 
 
-<img src="Figures/Figure2_MarkovChain.png" alt="Figure 2" width="600"/>
+<div align="center">
+  <img src="Figures/Figure2_MarkovChain.png" alt="Figure 2" width="600"/>
+</div>
 
 **Figure 2:** Maximum magnitude of earthquakes for each month between May 1990 and June 2024
 
@@ -56,8 +59,9 @@ Using a month as the time unit, the sequential transition of earthquakes was tak
 | 5-6    | 0.428571 | 0.571429 | 0        | 0        |
 | >6     | 0        | 0.5      | 0.5      | 0        |
 
-
-<img src="Figures/Figure4_MarkovChain.png" alt="Figure 4" width="400"/>
+<div align="center">
+  <img src="Figures/Figure4_MarkovChain.png" alt="Figure 4" width="400"/>
+</div>
 
 **Figure 4:** One-step transition diagram of magnitude group for the region
 
@@ -76,6 +80,9 @@ Since there is an irreducible Markov chain for calculating the recurrence period
 ## Conclusion
 
 In this study, it is estimated that the mean recurrence time of future earthquakes by analyzing historical earthquakes using the Markov chain stochastic process method. It is predicted that earthquakes in the Marmara Region of Turkey will happen about every 1.5 months with magnitudes ranging from 3 to 4. The estimated recurrence period for earthquakes with a magnitude of 4 to 5 is approximately three and a half months. Furthermore, an earthquake with a magnitude between 5 and 6 is predicted to happen roughly every 25 months, while an earthquake with a magnitude greater than 6 is predicted to happen every 117 months.
+
+## Declaration
+This study was conducted as a term project for the CE 505 Applied Stochastic Analysis and Modeling course at Boğaziçi University during the Spring 2023-2024 semester. For access to the full text of the study, please feel free to contact me.
 
 ## References
 
