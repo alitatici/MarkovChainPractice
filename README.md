@@ -67,7 +67,7 @@ This indicates an equilibrium distribution suggesting a process that adheres to 
 
 Since there is an irreducible Markov chain for calculating the recurrence periods of earthquakes in clusters, the earthquake recurrence times of the clusters or mean passage time (in months) are obtained using the equilibrium distribution.
 
-**Table 2:** Mean passage time of the earthquakes sequencing for the Marmara region
+**Table 2:** Mean passage time (months) of the earthquakes sequencing for the Marmara region
 
 | States | 3-4   | 4-5   | 5-6   | >6    |
 |--------|-------|-------|-------|-------|
